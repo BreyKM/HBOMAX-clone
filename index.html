@@ -8,22 +8,43 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <script src="./script.js"></script>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Series</a>
+      <a href="#">Originals</a>
+      <a href="#">Just Added</a>
+      <a href="#">Last Chance</a>
+      <a href="#">Coming Soon</a>
+      <a href="#">Trending Now</a>
+      <a href="#">Awards & Acclaim</a>
+    </div>
+    <nav id="navBar" class="navbar">
       <div class="navbar-left">
         <div class="menu-icon">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+          <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+            >&#9776;</span
+          >
         </div>
-        <a href="#"></a>
-        <a href="#"></a>
+        <a href="#">Movies</a>
+        <a href="#">Series</a>
       </div>
-      <div class="HBOMAX-logo">
-        <img src="./images/HBOMAX-logo.svg" />
+      <div class="logo">
+        <a href="#"
+          ><img class="hbomax-logo" src="./images/HBOMAX-logo-white.png"
+        /></a>
       </div>
       <div class="navbar-right">
-        <img src="./images/search-icon.svg" />
+        <img class="search-icon" src="./images/search-icon.svg" />
+        <div class="profile-pic">B</div>
+        <div class="profile-name">Bredan</div>
       </div>
     </nav>
+    </div>
   </body>
 </html>
