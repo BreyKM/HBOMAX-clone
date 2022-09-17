@@ -7,8 +7,68 @@
 
 body {
   font-family: "Lexend Deca", sans-serif;
-  background: url(./images/HBOMAX-background.png);
+  background: black;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./images/HOD-img.jpg);
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    box-shadow: 
+      0 -50px 60px 30px black inset;
+    color: white;
+}
+
+.header .hod-logo, .logo-header, .logo-text {
+  width: 30%;
+  margin-left: 4rem;
+}
+
+.logo-header {
+  margin-top: 1rem;
+}
+
+.header  .header-buttons {
+  margin-left: 4rem;
+}
+
+.header-buttons {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.play-button {
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  border-color: rgb(148, 29, 232);
+}
+
+.info-button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255);
+  background-color: rgb(40, 40, 40);
+  padding: 1rem 2rem;
+  border-radius: .4rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.info-button:hover {
+  border: 2px solid rgba(148, 29, 232);
 }
 
 a {
@@ -97,7 +157,7 @@ a {
 .navbar-right {
   display: flex;
   align-items: center;
-  margin-right: 3rem;
+  margin-right: 4rem;
   column-gap: 0.5rem;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -105,7 +165,7 @@ a {
 .navbar-left {
   display: flex;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 4rem;
   column-gap: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -121,12 +181,68 @@ a {
 .profile-pic {
   border: 2px solid hsl(218, 82%, 72%);
   background-color: black;
-  color: rgba(255, 255, 255);
   border-radius: 50%;
   padding: 0.5rem 0.75rem;
   font-size: 14px;
+  cursor: pointer;
+}
+
+#profile-pic {
+  color: rgba(255, 255, 255);;
 }
 
 .profile-name {
-  color: rgba(255, 255, 255);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-name:hover {
+    color: rgba(255, 255, 255);
+    cursor: pointer;
+}
+.dropbtn {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(25, 25, 25);
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: rgb(40, 40, 40);}
+
+.show {display: block;}
+
+.profile-button-container {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  color: white;
+  border: none;
 }

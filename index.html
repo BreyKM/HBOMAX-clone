@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HBO MAX clone</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <script src="./script.js"></script>
 
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="#">Home</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HBO MAX clone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <script src="./script.js"></script>
+  <header id="Home" class="header">
+    <img class="hod-logo" src="./images/HOD-logo-img.png">
+    <p class="logo-header">NEW EPSIODES SUNDAYS</p>
+    <p class="logo-text">Politics, pride - and power. The story of House Targaryen continues.</p>
+    <div class="header-buttons">
+    <img class="play-button" src="./images/play-button.png">
+    <button class="info-button" type="button">MORE INFO</button></div>
+  </header>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">Series</a>
+    <a href="#">Originals</a>
+    <a href="#">Just Added</a>
+    <a href="#">Last Chance</a>
+    <a href="#">Coming Soon</a>
+    <a href="#">Trending Now</a>
+    <a href="#">Awards & Acclaim</a>
+  </div>
+  <nav id="navBar" class="navbar">
+    <div class="navbar-left">
+      <div class="menu-icon">
+        <span style="font-size: 22px; cursor: pointer" onclick="openNav()">&#9776;</span>
+      </div>
       <a href="#">Movies</a>
       <a href="#">Series</a>
-      <a href="#">Originals</a>
-      <a href="#">Just Added</a>
-      <a href="#">Last Chance</a>
-      <a href="#">Coming Soon</a>
-      <a href="#">Trending Now</a>
-      <a href="#">Awards & Acclaim</a>
     </div>
-    <nav id="navBar" class="navbar">
-      <div class="navbar-left">
-        <div class="menu-icon">
-          <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-            >&#9776;</span
-          >
+    <div class="logo">
+      <a href="#"><img class="hbomax-logo" src="./images/HBOMAX-logo-white.png" /></a>
+    </div>
+    <div class="navbar-right">
+      <img class="search-icon" src="./images/search-icon.svg" />
+      <div class="dropdown">
+        <div class="profile-button-container">
+          <button onclick="myFunction()" class="profile-pic dropbtn" id="profile-pic">B</button>
+          <div onclick="myFunction()" class="profile-name dropbtn">Bredan</div>
         </div>
-        <a href="#">Movies</a>
-        <a href="#">Series</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">My Stuff</a>
+          <a href="#">Switch Profiles</a>
+          <a href="#">Settings</a>
+          <hr>
+          <a href="#">Sign Out</a>
+
+        </div>
+
       </div>
-      <div class="logo">
-        <a href="#"
-          ><img class="hbomax-logo" src="./images/HBOMAX-logo-white.png"
-        /></a>
-      </div>
-      <div class="navbar-right">
-        <img class="search-icon" src="./images/search-icon.svg" />
-        <div class="profile-pic">B</div>
-        <div class="profile-name">Bredan</div>
-      </div>
-    </nav>
     </div>
-  </body>
+  </nav>
+  </div>
+</body>
+
 </html>
