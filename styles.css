@@ -145,6 +145,14 @@ a {
   z-index: 1;
 }
 
+.navbar-scrolled {
+  background-color: rgb(11, 11, 11, 0.9) !important;
+  -webkit-transition: background-color 0.3s ease-out-;
+	-moz-transition: background-color 0.3s ease-out;
+	-o-transition: background-color 0.3s ease-out;
+	transition: background-color 0.3s ease-out;
+}
+
 .navbar-left,
 .hbomax-logo,
 .navbar-right {
@@ -374,6 +382,10 @@ hr {
 }
 
 .btn-img-flex {
-  display: flex;
-}
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  }
 
+.btn-img-container:hover .btn-img-flex {
+    opacity: 1;
+  }

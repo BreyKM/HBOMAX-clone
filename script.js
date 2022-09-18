@@ -23,3 +23,17 @@ function openNav() {
       }
     }
   }
+
+  window.onscroll = () => {scrollNavbar()};
+  
+  scrollNavbar = () => {
+    // Target elements
+    const navbar = document.getElementById("navBar");
+
+    if (document.documentElement.scrollTop > 180) {
+      navbar.classList.add('navbar-scrolled');
+    }
+    else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  };
